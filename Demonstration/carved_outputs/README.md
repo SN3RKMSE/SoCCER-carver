@@ -1,0 +1,2 @@
+Outputs from user runs (if destination directory is unchanged) appear here. Compare them with ../expected_outputs/ to check (keep all settings same). 
+If output directory must be changed, please make sure that the output directory exists beforehand. 
