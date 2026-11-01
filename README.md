@@ -10,7 +10,7 @@ Takes a periodic MD LAMMPS trajectory (.lammpstrj) file and converts its dump in
 
 ## Inputs
 
-Set these in the parameters cell of `SoCCER.ipynb`:
+Set these in the parameters cell of `main.ipynb`:
 
 | Parameter | Meaning |
 |---|---|
@@ -34,8 +34,6 @@ Please refer to the sample notebook for a clearer picture.
 ## Usage
 
 Edit the parameters cell and run all cells. Please refer to the example shown in this repository. **The output directory mentioned in the input cell must exist in the directory for the code to work.**
-
-Demonstration/ contains 5 frames from a classical MD run of Li₂S₈ in DME (20,010 atoms, both Li restrained near the chain). With R = 5 Å, your output should match Demonstration/expected_outputs/.
 
 ## Assumptions
 
