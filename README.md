@@ -10,12 +10,12 @@ Takes a periodic MD LAMMPS trajectory (.lammpstrj) file and converts its dump in
 
 ## Inputs
 
-Set these in the parameters cell of `main.ipynb`:
+Set these in the parameters cell of `SoCCER.ipynb`:
 
 | Parameter | Meaning |
 |---|---|
 | `trajectory_file` | LAMMPS text dump with an `element` column (read with ASE) |
-| `carve_radius` | R, in Å |
+| `carve_radius` | Carve Radius, in Å |
 | `solute_atoms` | `[index, symbol]` for each solute atom, 0-based, in dump order |
 | `solvent_atoms` | element order of one solvent molecule |
 | `output_directory` | folder for the output files |
@@ -34,6 +34,8 @@ Please refer to the sample notebook for a clearer picture.
 ## Usage
 
 Edit the parameters cell and run all cells. Please refer to the example shown in this repository. **The output directory mentioned in the input cell must exist in the directory for the code to work.**
+
+Demonstration/ contains 5 frames from a classical MD run of Li₂S₈ in DME (20,010 atoms, both Li restrained near the chain). With R = 5 Å, user output should match Demonstration/expected_outputs/.
 
 ## Assumptions
 
@@ -88,3 +90,7 @@ All these will be made and released with the manuscript. Any other suggestions o
 [2] Harris, C.R., Millman, K.J., van der Walt, S.J. et al. Array programming with NumPy. Nature 585, 357–362 (2020). https://doi.org/10.1038/s41586-020-2649-2
 
 [3] A. H. Larsen et al., “The atomic simulation environment—a Python library for working with atoms”, J. Phys.: Condens. Matter 29, 273002 (2017). doi:10.1088/1361-648X/aa680e
+
+## License
+
+SoCCER is released under the [MIT License](LICENSE).
